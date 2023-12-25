@@ -1,0 +1,42 @@
+.ca-header{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.con-icon{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #d9d9d9;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    height: 32px;
+    width: 32px;
+    padding: 2px;
+
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
