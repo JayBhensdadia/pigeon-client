@@ -1,3 +1,16 @@
 .ca-text-input-area{
-    background-color: yellow;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.input-box{
+    outline-width: 0;
+    border: none;
+    margin-left: 10px;
+    font-size: 1rem;
 }
