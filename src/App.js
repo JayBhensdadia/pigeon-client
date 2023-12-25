@@ -1,9 +1,10 @@
 import './App.css';
+import MainContainer from './components/main-container/MainContainer';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to Pigeon!!</h1>
+      <MainContainer />
     </div>
   );
 }
