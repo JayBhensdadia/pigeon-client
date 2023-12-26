@@ -1,4 +1,26 @@
+
+
+.other-msg-box{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+}
+
 .other-msg{
+    display: flex;
+    flex-direction: column;
     background-color: lightgray;
+    width: max-content;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.other-timeStamp{
+    font-size: 0.75rem;
+    opacity: 0.5;
     text-align: left;
+    padding-top: 10px;
 }

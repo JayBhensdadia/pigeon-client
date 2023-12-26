@@ -12,9 +12,19 @@ export default function CAMessagesContainer(props){
         <div className="ca-messages-container">
             {props.messages.map((msg)=>{
                 if(msg.username==="self"){
-                    return <MessageSelf content={msg.content} />;
+                    return(
+                        <MessageSelf 
+                        content={msg.content}
+                        timeStamp={msg.timeStamp} 
+                        />
+                    );
                 }else{
-                    return <MessageOther content={msg.content} />;
+                    return(
+                        <MessageOther 
+                        content={msg.content}
+                        timeStamp={msg.timeStamp} 
+                        />
+                    );
                 }
             })}
         </div>
