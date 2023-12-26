@@ -8,7 +8,7 @@ export default function ChatArea({props}){
     return(
         <div className="chat-area">
             <CAHeader props={props.header}/>
-            <CAMessagesContainer />
+            <CAMessagesContainer messages={props.messages} />
             <CATextInputArea />
         </div>
     );
