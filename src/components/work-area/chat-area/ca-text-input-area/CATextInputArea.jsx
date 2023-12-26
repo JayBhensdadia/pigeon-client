@@ -8,7 +8,7 @@ import { IconButton } from "@mui/material";
 export default function CATextInputArea(){
     return(
         <div className="ca-text-input-area">
-            <input className="input-box" placeholder="Type a message" />
+            <input className="ca-input-box" placeholder="Type a message" />
             <IconButton>
                 <SendIcon />
             </IconButton>

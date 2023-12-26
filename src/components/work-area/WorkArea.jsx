@@ -51,8 +51,8 @@ export default function WorkArea(){
     return(
         <div className="work-area">
             {/* <Welcome /> */}
-            <CreateGroup />
-            {/* <ChatArea  props={conversation} /> */}
+            {/* <CreateGroup /> */}
+            <ChatArea  props={conversation} />
         </div>
     );
 }

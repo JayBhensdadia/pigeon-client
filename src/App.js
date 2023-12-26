@@ -6,9 +6,9 @@ import Signup from './components/signup/Signup';
 function App() {
   return (
     <div className="App">
-      <Signup />
+      {/* <Signup /> */}
       {/* <Login /> */}
-      {/* <MainContainer /> */}
+      <MainContainer />
     </div>
   );
 }
