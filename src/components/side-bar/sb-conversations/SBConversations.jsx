@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import './SBConversations.css'
 import ConversationItem from "./conversation-item/ConversationItem";
+import { useNavigate } from "react-router-dom";
 
 export default function SBConversations(){
+
+    
 
     const [conversations, setConversations] = useState([
         {
@@ -30,6 +33,7 @@ export default function SBConversations(){
                         <ConversationItem 
                             key={conversation.name}
                             props={conversation}
+                            
                         />
                     );
                 })

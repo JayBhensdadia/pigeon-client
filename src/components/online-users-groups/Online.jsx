@@ -20,6 +20,32 @@ export default function Online(){
         {
             name:"user-1"
         }
+        ,
+        {
+            name:"user-1"
+        },
+        {
+            name:"user-1"
+        },
+        {
+            name:"user-1"
+        },
+        {
+            name:"user-1"
+        }
+        ,
+        {
+            name:"user-1"
+        },
+        {
+            name:"user-1"
+        },
+        {
+            name:"user-1"
+        },
+        {
+            name:"user-1"
+        }
     ]
     return(
         <div className="online-container">
