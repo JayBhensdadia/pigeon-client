@@ -11,6 +11,7 @@
 
 .welcome-logo{
     height: 20vw;
+    filter: drop-shadow(5px 5px 5px gray);
 }
 
 .welcome-container p{

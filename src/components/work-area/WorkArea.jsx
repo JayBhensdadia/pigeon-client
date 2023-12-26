@@ -2,6 +2,7 @@ import React from "react";
 import './WorkArea.css';
 import ChatArea from "./chat-area/ChatArea";
 import Welcome from "./welcome/Welcome";
+import CreateGroup from "./create-group/CreateGroup";
 
 export default function WorkArea(){
 
@@ -49,7 +50,8 @@ export default function WorkArea(){
 
     return(
         <div className="work-area">
-            <Welcome />
+            {/* <Welcome /> */}
+            <CreateGroup />
             {/* <ChatArea  props={conversation} /> */}
         </div>
     );

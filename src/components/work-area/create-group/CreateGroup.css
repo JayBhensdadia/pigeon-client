@@ -1,0 +1,17 @@
+.create-group-container{
+    flex: 0.7;
+    align-self: center;
+    padding: 20px 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box{
+    outline-width: 0;
+    border: none;
+    margin-left: 10px;
+    font-size: 1rem;
+}
