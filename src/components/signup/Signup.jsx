@@ -9,8 +9,10 @@ export default function Signup(){
             <div className="signup-box">
                 <h1>Signup</h1>
                 <input className="input-box" placeholder="Username" />
+                <input className="input-box" placeholder="Email" />
                 <input className="input-box" placeholder="Password" />
                 <button className="submit-btn">Register</button>
+                <p>Already have an account? <a href="/">Login</a></p>
             </div>
 
             <div className="logo-container">
