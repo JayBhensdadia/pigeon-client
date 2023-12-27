@@ -8,35 +8,24 @@ import logo from './logo512.png';
 
 export default function Login(){
 
-//     const [name, setName] = useState("");
-//     const [password, setPassword] = useState("");
-
-//    // const [data, setData] = useState({name:"", password:""});
-//     const [loading, setLoading] = useState(false);
-//     const [loginStatus, setLoginStatus] = useState("");
+    
+     const [loading, setLoading] = useState(false);
+    // const [loginStatus, setLoginStatus] = useState("");
     
     const navigate = useNavigate();
 
 
-    // const nameChangeHandler = (e)=>{
-    //     // setData({...data , [e.target.name] : e.target.value});
-    //     setName(e.target.value);
-    // };
-
-    // const passwordChangeHandler = (e)=>{
-    //     // setData({...data , [e.target.name] : e.target.value});
-    //     setPassword(e.target.value);
-    // };
+    
 
     const loginHandler = async (e)=>{
         const name = document.getElementById("login-username").value;
         const password = document.getElementById("login-password").value;
         const data = {name, password};
-        alert(data);
-        //setLoading(true);
+        //alert(data.name);
+        setLoading(true);
 
         try{
-            alert("inside try");
+            //alert("inside try");
             const config = {
                 headers:{
                     "Content-type":"application/json"
@@ -48,24 +37,38 @@ export default function Login(){
                 data
             );
             
-            alert("login: ",response);
+            //alert(JSON.stringify(response));
             //setLoginStatus({msg:"Success", key: Math.random()});
-            //setLoading(false);
-            //localStorage.setItem("userData",JSON.stringify(response));
-            navigate("/app");
+            
+            localStorage.setItem("userData",JSON.stringify(response));
+            
+
+            setTimeout(()=>{
+                setLoading(false);
+                navigate("/app");
+
+            },2000);
 
         }catch(error){
             alert("login failed " + error);
+            setLoading(false);
             // setLoginStatus({
             //     msg:"Invalid username or password",
             //     key: Math.random()
             // });
         }
 
-        //setLoading(false);
+        
     };
 
     return(
+        <>
+            <Backdrop
+                    sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                    open={loading}>
+                        <CircularProgress color="inherit" />
+                </Backdrop>
+
         <div className="login-container">
             <div className="logo-container">
                 <img src={logo} alt="logo" />
@@ -79,5 +82,6 @@ export default function Login(){
             </div>
             
         </div>
+        </>
     );
 }
