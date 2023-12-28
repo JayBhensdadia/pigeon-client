@@ -9,10 +9,14 @@ import { Link, useNavigate } from 'react-router-dom'
 import { BsEmojiLaughing, BsEmojiExpressionless } from "react-icons/bs"
 import { toast } from 'react-toastify';
 import { validUser } from '../apis/auth'
+
+
 const defaultData = {
   email: "",
   password: ""
 }
+
+
 function Login() {
   const [formData, setFormData] = useState(defaultData)
   const [isLoading, setIsLoading] = useState(false)
@@ -113,7 +117,7 @@ function Login() {
               <p style={{ display: isLoading ? "none" : "block" }} className='test-[#fff]'>Login</p>
             </button>
             {/* <div className='border-t-[1px] w-[100%] sm:w-[80%] my-3' ></div> */}
-            <p className='text-[#fff] text-center sm:-ml-20'>/</p>
+            {/* <p className='text-[#fff] text-center sm:-ml-20'>/</p>
             <GoogleLogin
               clientId={process.env.REACT_APP_CLIENT_ID}
               render={(renderProps) => (
@@ -126,7 +130,7 @@ function Login() {
               onFailure={googleFailure}
               cookiePolicy={'single_host_origin'}
               scope="profile email https://www.googleapis.com/auth/user.birthday.read"
-            />
+            /> */}
 
 
           </form>
