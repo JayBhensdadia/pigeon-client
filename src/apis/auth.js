@@ -13,6 +13,7 @@ export const loginUser = async (body) => {
     return await axios.post(`${url}/auth/login`, body);
   } catch (error) {
     console.log('error in loginuser api');
+    throw error;
   }
 };
 export const googleAuth = async (body) => {
