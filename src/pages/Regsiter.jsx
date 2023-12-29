@@ -8,6 +8,9 @@ import { useState } from 'react'
 import { BsEmojiLaughing, BsEmojiExpressionless } from "react-icons/bs"
 import { toast } from 'react-toastify';
 import { validUser } from '../apis/auth'
+import './login-style.css';
+
+
 const defaultData = {
   firstname: "",
   lastname: "",
@@ -80,6 +83,7 @@ function Regsiter() {
   }, [])
   return (
     <div className='bg-[#121418] w-[100vw] h-[100vh] flex justify-center items-center'>
+      
       <div className='w-[90%] sm:w-[400px] pl-0 ml-0 h-[400px] sm:pl-0 sm:ml-9 mt-10 relative'>
         <div className='absolute -top-7 left-0'>
           <h3 className=' text-[25px] font-bold tracking-wider text-[#fff]'>Register</h3>
@@ -128,6 +132,9 @@ function Regsiter() {
           /> */}
         </form>
       </div>
+
+      <img src='./logo.png' />
+
     </div>
   )
 }
